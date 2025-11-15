@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sos_red">#FFFF4444</color>
+    <color name="sos_dark_red">#FFCC0000</color>
+    <color name="gray_light">#FFCCCCCC</color>
+    <color name="gray_medium">#FF666666</color>
+    <color name="gray_dark">#FF333333</color>
+    <color name="gray_card">#FF1A1A1A</color>
+    <color name="green_ready">#FF00FF00</color>
+    <color name="orange_warning">#FFFFA500</color>
+    <color name="blue_location">#FF4285F4</color>
+</resources>

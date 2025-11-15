@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EmergencyConnect" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/sos_red</item>
+        <item name="colorPrimaryVariant">@color/sos_dark_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/gray_light</item>
+        <item name="colorSecondaryVariant">@color/gray_medium</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.EmergencyConnect" parent="Base.Theme.EmergencyConnect">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>

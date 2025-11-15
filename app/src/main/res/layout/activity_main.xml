@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ready_for_emergency"
+                android:textColor="@color/gray_light"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Status Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp"
+            android:gravity="center">
+
+            <!-- Devices Card -->
+            <LinearLayout
+                android:id="@+id/cardDevices"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:id="@+id/tvDevicesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/devices"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Battery Card -->
+            <LinearLayout
+                android:id="@+id/cardBattery"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp">
+
+                <TextView
+                    android:id="@+id/tvBatteryLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/battery"
+                    android:textColor="@color/gray_light"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- GPS Card -->
+            <LinearLayout
+                android:id="@+id/cardGps"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_card"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/tvGpsStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gps"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGpsSubStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Checking..."
+                    android:textColor="@color/orange_warning"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_dark"
+            android:layout_marginBottom="32dp" />
+
+        <!-- SOS Button Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sos"
+                android:textColor="@color/sos_red"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/press_hold_alert"
+                android:textColor="@color/gray_light"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- SOS Button -->
+            <Button
+                android:id="@+id/btnSos"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_sos_button"
+                android:gravity="center"
+                android:text="@string/sos"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+
+        <!-- Current Location Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_location"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Getting location..."
+                android:textColor="@color/gray_light"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <!-- Bottom Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="4"
+            tools:ignore="ExtraText">
+
+            <Button
+                android:id="@+id/btnSosTab"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/sos"
+                android:textColor="@color/sos_red"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnChatTab"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/chat"
+                android:textColor="@color/gray_light"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnMapTab"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/map"
+                android:textColor="@color/gray_light"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnSettingsTab"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="@string/settings"
+                android:textColor="@color/gray_light"
+                android:background="@android:color/transparent"
+                android:textSize="14sp"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

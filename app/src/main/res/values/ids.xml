@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MainActivity IDs -->
+    <item name="tvDevicesCount" type="id" />
+    <item name="tvBatteryLevel" type="id" />
+    <item name="tvGpsStatus" type="id" />
+    <item name="tvGpsSubStatus" type="id" />
+    <item name="tvLocation" type="id" />
+    <item name="btnSos" type="id" />
+    <item name="btnSosTab" type="id" />
+    <item name="btnChatTab" type="id" />
+    <item name="btnMapTab" type="id" />
+    <item name="btnSettingsTab" type="id" />
+    <item name="cardDevices" type="id" />
+    <item name="cardBattery" type="id" />
+    <item name="cardGps" type="id" />
+
+    <!-- ChatActivity IDs -->
+    <item name="tvDevicesFound" type="id" />
+    <item name="btnStartBroadcasting" type="id" />
+    <item name="rvDevices" type="id" />
+
+    <!-- MapActivity IDs -->
+    <item name="map" type="id" />
+    <item name="infoWindowOverlay" type="id" />
+    <item name="tvMarkerName" type="id" />
+    <item name="tvMarkerDetail1" type="id" />
+    <item name="tvMarkerDetail2" type="id" />
+    <item name="fabMyLocation" type="id" />
+    <item name="btnRefreshMap" type="id" />
+    <item name="btnSendLocation" type="id" />
+    <item name="tvSosStatus" type="id" />
+    <item name="btnSendSos" type="id" />
+    <item name="tvSendStatus" type="id" />
+
+    <!-- SettingsActivity IDs -->
+    <item name="etUserName" type="id" />
+    <item name="btnAddContact" type="id" />
+    <item name="switchLocationSharing" type="id" />
+    <item name="switchSosAlerts" type="id" />
+    <item name="switchAutoResponse" type="id" />
+    <item name="switchMeshNetwork" type="id" />
+    <item name="switchSoundAlerts" type="id" />
+    <item name="switchHapticFeedback" type="id" />
+
+    <!-- item_device.xml IDs -->
+    <item name="tvDeviceName" type="id" />
+    <item name="tvDeviceDistance" type="id" />
+    <item name="tvDeviceType" type="id" />
+    <item name="tvLastSeen" type="id" />
+
+    <!-- item_message.xml IDs -->
+    <item name="layoutIncoming" type="id" />
+    <item name="layoutOutgoing" type="id" />
+    <item name="layoutEmergency" type="id" />
+    <item name="tvIncomingSender" type="id" />
+    <item name="tvIncomingMessage" type="id" />
+    <item name="tvIncomingTime" type="id" />
+    <item name="tvOutgoingMessage" type="id" />
+    <item name="tvOutgoingTime" type="id" />
+    <item name="tvEmergencySender" type="id" />
+    <item name="tvEmergencyMessage" type="id" />
+    <item name="tvEmergencyLocation" type="id" />
+    <item name="tvEmergencyTime" type="id" />
+</resources>

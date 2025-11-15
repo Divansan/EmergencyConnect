@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/local_chat"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/connect_nearby"
+        android:textColor="@color/gray_light"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Devices Found -->
+    <TextView
+        android:id="@+id/tvDevicesFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_devices_found"
+        android:textColor="@color/gray_light"
+        android:textSize="12sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Start Broadcasting Button -->
+    <Button
+        android:id="@+id/btnStartBroadcasting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/start_broadcasting"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_primary"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Nearby Devices Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nearby_devices"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Devices List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="4"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnSosTab"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/sos"
+            android:textColor="@color/gray_light"
+            android:background="@android:color/transparent"
+            android:textSize="14sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnChatTab"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/chat"
+            android:textColor="@color/sos_red"
+            android:background="@android:color/transparent"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnMapTab"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/map"
+            android:textColor="@color/gray_light"
+            android:background="@android:color/transparent"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnSettingsTab"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/settings"
+            android:textColor="@color/gray_light"
+            android:background="@android:color/transparent"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
